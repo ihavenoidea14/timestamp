@@ -42,7 +42,7 @@ describe('Timestamp Microservice', function() {
           res.should.have.status(200);
           res.body.should.be.a('object');
           res.should.be.json;
-          res.body.should.have.property('unix').equal(7);
+          res.body.should.have.property('unix').equal(null);
           res.body.should.have.property('natural').equal(null);
           done();
         });

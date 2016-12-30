@@ -6,6 +6,7 @@
     "start": "node ./bin/www",
     "test": "mocha"
   },
+  "pre-commit": "test",
   "dependencies": {
     "body-parser": "~1.15.1",
     "debug": "~2.2.0",
@@ -15,6 +16,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^3.0.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "pre-commit": "^1.2.2"
   }
 }
