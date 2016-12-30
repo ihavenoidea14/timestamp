@@ -11,4 +11,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use('/', routes);
 
-module.exports = app
+module.exports = app;
