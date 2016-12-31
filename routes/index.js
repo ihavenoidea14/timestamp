@@ -15,7 +15,7 @@ router.get('/:date', function(req, res, next) {
     unix = new Date(natural).getTime();
     res.json({ 'message': 'success', 'unix': unix, 'natural': natural });
   } else {
-    res.json({ 'message': 'invalid params', 'unix': null, 'natural': null });
+    res.json({ 'message': 'sammi', 'unix': null, 'natural': null });
   }
 
 });
