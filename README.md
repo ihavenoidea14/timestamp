@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/ihavenoidea14/timestamp.svg?branch=master)](https://travis-ci.org/ihavenoidea14/timestamp)
+
+
 # FCC Timestamp Microservice
 
 
