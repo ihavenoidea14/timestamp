@@ -11,7 +11,7 @@ describe('Timestamp Microservice', function() {
 
     it ('it should return a date when a unix date is passed', function(done) {
       chai.request(server)
-        .get('/12345678999')
+        .get('/api/12345678999')
         .end(function(err, res) {
           res.should.have.status(200);
           res.body.should.be.a('object');
@@ -24,7 +24,7 @@ describe('Timestamp Microservice', function() {
 
     it ('it should return a date when a natural date is passed', function(done) {
       chai.request(server)
-        .get('/December%2030,%202016')
+        .get('/api/December%2030,%202016')
         .end(function(err, res) {
           res.should.have.status(200);
           res.body.should.be.a('object');
@@ -37,7 +37,7 @@ describe('Timestamp Microservice', function() {
 
     it ('it should return null properties when invalid date is passed', function(done) {
       chai.request(server)
-        .get('/cat')
+        .get('/api/cat')
         .end(function(err, res) {
           res.should.have.status(200);
           res.body.should.be.a('object');

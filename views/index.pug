@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .container
+    h1.text-center FCC Timestamp Microservice
+    blockquote.blockquote
+      p This service will return both Unix and natural times for a given date input.
+      p The response will be in the following format:
+      pre
+        samp {
+        br
+        samp &nbsp&nbsp'message': 'success',
+        br
+        samp &nbsp&nbsp'unix': '123456789987',
+        br
+        samp &nbsp&nbsp'natural': 'November 29, 1973'
+        br
+        samp } 
+    form
+      .form-group
+        label(for='input-date') Date:
+        input(type='text' id='input-date' class='form-control' name='date')
+        small(class='form-text text-muted') Must be in either Unix format ex. 123456789987 or Natural format ex. December 25, 2016
+      .form-group
+        button(type='button' id='submitButton' class='btn btn-primary') Submit
+      .form-group
+        label(for='response') Response:
+        pre#response
