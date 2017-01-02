@@ -9,4 +9,6 @@
 
 * Node.js
 * Express.js
+* Pug
 * Travis CI
+* Heroku
